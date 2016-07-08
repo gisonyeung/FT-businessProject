@@ -28,16 +28,27 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
 
 body {
 	// min-height: 3000px;
+	&.hidden {
+		overflow: hidden;
+	}
 }
 
 ul, ol {
 	list-style-type: none;
 }
 
+button {
+	border: none;
+	padding: 0;
+	outline: medium;
+}
+
 a {
+	cursor: pointer;
 	text-decoration: none;
 	color: inherit;
 }
+
 
 $themeColor: #1199ed;
 
@@ -74,7 +85,7 @@ $themeColor: #1199ed;
     background-color: #fff;
 	height: 60px;
 	.ft-brand {
-	    position: relative;
+	    // position: relative;
 	    height: 60px;
 	    line-height: 60px;
 	    float: left;
@@ -97,6 +108,7 @@ $themeColor: #1199ed;
 		li {
 			display: inline-block;
 			*zoom: 1;
+			*display: inline;
 			margin-left: 30px;
 		    height: 58px;
     		line-height: 58px;
@@ -163,9 +175,145 @@ $themeColor: #1199ed;
 	}
 }
 
+.sm-show {
+	display: none;
+}
+
 
 	
 // }
+
+
+@media screen and (max-width: 1190px) {
+
+	.inner-wrapper {
+		width: 100%;
+		max-width: 990px;
+	}
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+	.sm-show {
+		display: block;
+	}
+
+	.sm-hide {
+		display: none;
+	}
+
+	.header {
+		height: 50px;
+		text-align: center;
+		.inner-wrapper {
+			position: static;
+		}
+		.ft-brand {
+			float: none;
+			position: absolute;
+		    top: 0;
+		    left: 0;
+		    height: 50px;
+		    width: 100%;
+		    line-height: 50px;
+		    border-bottom: 1px solid #ccc;
+		    z-index: 9005;
+		    background-color: #fff;
+
+			.ft-logo {
+				@include bgimg('../img/brand.png');
+				@include bgsize(236px, 27px);
+				background-size: contain;
+				position: static;
+				margin-top: 12px;
+			}
+		}
+
+		.menu {
+			position: absolute;
+			top: 0px;
+			left:0px;
+			text-align: center;
+			height: 50px;
+			width: 50px;
+			background-color: #fff;
+			cursor: pointer;
+			z-index: 9006;
+			@include transition();
+			&:active {
+				background-color: #eee;
+			}
+			a {
+				@include bgsize(16px, 16px);
+				@include bgimg('../img/menu.png');
+				margin-top: 4px;
+			}
+			
+		}
+
+		.nav {
+			position: absolute;
+			top: 0;
+			left: -140px;
+			width: 140px;
+			height: 100%;
+			background-color: #fff;
+			z-index: 9004;
+			border-right: 1px solid #e5e5e5;
+			opacity: 0;
+			text-align: left;
+			.ft-list {
+				margin-top: 50px;
+				li {
+					display: block;
+					height: 50px;
+				    line-height: 50px;
+				    border-bottom: 1px solid #e5e5e5;
+			        padding-left: 12px;
+			        margin-left: 0px;
+			        border-left: 4px solid #fff;
+			        &.active {
+			        	border-left-color: $themeColor;
+		        	    background-color: #f5f5f5;
+			        }
+			        a {
+			        	display: block;
+			        }
+				}
+			}
+			&.active {
+				opacity: 1;
+				left: 0;
+				
+			}
+
+		}
+		.mask {
+			position: absolute;
+		    z-index: 9003;
+		    left: 0;
+		    top: 0;
+		    display: none;
+		    width: 100%;
+		    height: 100%;
+		    background-color: #000;
+		    opacity: 0;
+		    filter: alpha(opacity=0);
+		    &.active {
+				display: block;
+				opacity: .3;
+				filter: alpha(opacity=30);
+		    }
+		}
+	}
+
+
+
+}
+
+
 
 // #wrapper {
 // 	position: absolute;
