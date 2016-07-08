@@ -19,3 +19,238 @@
 @mixin bgimg($url) {
 	background: url($url) transparent no-repeat center top;
 }
+
+
+.banner {
+
+}
+
+.slider-list {
+	position: relative;
+	text-align: center;
+	font-size: 0;
+	.wrap-bg {
+		img {
+			max-width: 100%;
+		}		
+	}
+
+	.wrap-tx {
+		position: absolute;
+	    width: 55%;
+    	left: 22.5%;
+    	top: 25%;
+	}
+
+	#slider-item1 {
+		background-color: #3B6BAD;
+		.wrap-bg {
+		    height: 450px;
+		    background: url(../img/banner1.jpg) center center no-repeat #3f6dac;
+		}
+		.wrap-tx {
+
+			@include bgsize(55%, 84px);
+			@include bgimg('../img/b1-text1.png');
+
+		}
+	}
+}
+
+.wrap-digest {
+	position: relative;
+	z-index: 1000;
+	width: 1190px;
+	margin: -130px auto 0;
+	@at-root {
+		.digest {
+		    background-color: #f5f5f5;
+	        float: left;
+		    width: 49%;
+		    margin-left: .5%;
+
+			.wrap-tx {
+				height: 275px;
+				h2 {
+					position: relative;
+					font-size: 22px;
+					padding: 20px 0 10px;
+				    color: #333;
+				    line-height: 1em;
+				    font-weight: 400;
+				    z-index: 2;
+				    text-align: center;
+				}
+				p {
+					position: relative;
+		    		width: 70%;
+					font-size: 13px;
+		    		color: #999;
+		    		line-height: 18px;
+		    		z-index: 2;
+		    		margin: 0 auto;
+		    		font-family: tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+				}
+				img {
+					position: relative;
+				    margin-top: -60px;
+				    width: 100%;
+		    		z-index: 1;
+				}
+			}
+
+			.wrap-card {
+			    letter-spacing: -.31em;
+			    margin-top: -25px;
+		        position: relative;
+   			 	z-index: 2;
+			}
+
+			.card {
+				height: 100px;
+				width: 33.33333333%;
+				display: inline-block;
+				*zoom: 1;
+			    letter-spacing: normal;
+		    	word-spacing: normal;
+			    vertical-align: top;
+		   		text-rendering: auto;
+		   		color: #fff;
+		   		text-align: center;
+		   		h3 {
+					font-size: 18px;
+					font-weight: normal;
+		   			margin-top: 35px;
+		   			text-shadow: 0px 2px 2px #333;
+		   			white-space:nowrap;
+		   		}
+			}
+			$leftPos: -10px;
+			$topPos: -10px;
+			&.a {
+				.card {
+					&.one {
+						background: url(../img/stamp1.png) $leftPos $topPos no-repeat #292A33;
+					}
+					&.two {
+						background: url(../img/stamp2.png) $leftPos $topPos no-repeat #333540;
+					}
+					&.three {
+						background: url(../img/stamp3.png) $leftPos $topPos no-repeat #3D3F4D;
+					}
+				}
+			}
+			&.b {
+			    margin-left: 10px;
+				.card {
+					&.one {
+						background: url(../img/stamp4.png) $leftPos $topPos no-repeat #292A33;
+					}
+					&.two {
+						background: url(../img/stamp5.png) $leftPos $topPos no-repeat #333540;
+					}
+					&.three {
+						background: url(../img/stamp6.png) $leftPos $topPos no-repeat #3D3F4D;
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+.section {
+	&.business {
+		margin-top: 48px;
+		padding-bottom: 10px;
+		.divide-head {
+			padding: 40px 0 30px 0;
+			font-size: 18px;
+			color: #333;
+			text-align: center;
+			font-weight: normal;
+		}
+		.widget {
+			height: 260px;
+			margin-bottom: 40px;
+			background-color: #fff;
+			border-top: 1px solid #fff;
+			&.a {
+				border-color: #F84541;
+				.wg-caption {
+					background-color: #F84541;
+				}
+			}
+			&.b {
+				border-color: #7055B2;
+				.wg-caption {
+					background-color: #7055B2;
+				}
+			}
+			&.c {
+				border-color: #4762B3;
+				.wg-caption {
+					background-color: #4762B3;
+				}
+			}
+
+		}
+		.wg-caption {
+			display: block;
+			width: 258px;
+			height: 230px;
+		    padding: 15px 20px;
+		    float: left;
+		    color: #fff;
+		    cursor: pointer;
+			background-color: #f64648;
+			h3 {
+				font-weight: normal;
+				font-size: 22px;
+				line-height: 50px;
+			}
+			p {
+				font-size: 12px;
+				color: #fefefe;
+				line-height: 18px;
+				margin-top: -8px;
+			}
+		}
+		.wg-content {
+			letter-spacing: -.4em;
+			margin-left: 298px;
+			background-color: #fff;
+			.card {
+				display: inline-block;
+				*zoom: 1;
+				letter-spacing: normal;
+				width: 33.33333333%;
+				text-align: center;
+				height: 259px;
+				overflow: hidden;
+			    border-right: 1px solid #e3e3e3;
+			    cursor: pointer;
+				h4 {
+					font-weight: normal;
+					font-size: 18px;
+					padding: 25px 0 20px 0;
+					color: #333;
+				}
+				img {
+					width: 150px;
+					@include transition($time: 0.25s);
+				}
+				&.no-border {
+					border-right: none;
+				}
+				&:hover {
+					img {
+						width: 170px;
+					}
+				}
+			}
+		}
+
+	}
+}
+

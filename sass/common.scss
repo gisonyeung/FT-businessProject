@@ -26,6 +26,10 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
     font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
 }
 
+body {
+	min-height: 3000px;
+}
+
 ul, ol {
 	list-style-type: none;
 }
@@ -110,141 +114,12 @@ a {
 
 }
 
-.banner {
 
-}
 
-.slider-list {
-	position: relative;
-	text-align: center;
-	font-size: 0;
-	.wrap-bg {
-		img {
-			max-width: 100%;
-		}		
+.section {
+	&.grey {
+		background-color: #F5F5F5;
 	}
-
-	.wrap-tx {
-		position: absolute;
-	    width: 55%;
-    	left: 22.5%;
-    	top: 25%;
-	}
-
-	#slider-item1 {
-		background-color: #3B6BAD;
-		.wrap-bg {
-		    height: 450px;
-		    background: url(../img/banner1.jpg) center center no-repeat #3f6dac;
-		}
-		.wrap-tx {
-
-			@include bgsize(55%, 84px);
-			@include bgimg('../img/b1-text1.png');
-
-		}
-	}
-}
-
-.wrap-digest {
-	position: relative;
-	z-index: 1000;
-	width: 1190px;
-	margin: -130px auto 0;
-	@at-root {
-		.digest {
-		    background-color: #f5f5f5;
-	        float: left;
-		    width: 49%;
-		    margin-left: .5%;
-
-			.wrap-tx {
-				height: 275px;
-				h2 {
-					position: relative;
-					font-size: 22px;
-					padding: 20px 0 10px;
-				    color: #333;
-				    line-height: 1em;
-				    font-weight: 400;
-				    z-index: 2;
-				    text-align: center;
-				}
-				p {
-					position: relative;
-		    		width: 70%;
-					font-size: 13px;
-		    		color: #999;
-		    		line-height: 18px;
-		    		z-index: 2;
-		    		margin: 0 auto;
-		    		font-family: tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
-				}
-				img {
-					position: relative;
-				    margin-top: -60px;
-				    width: 100%;
-		    		z-index: 1;
-				}
-			}
-
-			.wrap-card {
-			    letter-spacing: -.31em;
-			    margin-top: -25px;
-			}
-
-			.card {
-				height: 100px;
-				width: 33.33333333%;
-				display: inline-block;
-				*zoom: 1;
-			    letter-spacing: normal;
-		    	word-spacing: normal;
-			    vertical-align: top;
-		   		text-rendering: auto;
-		   		color: #fff;
-		   		text-align: center;
-		   		h3 {
-					font-size: 18px;
-					font-weight: normal;
-		   			margin-top: 35px;
-		   			text-shadow: 0px 2px 2px #333;
-		   		}
-			}
-			$leftPos: -10px;
-			$topPos: -10px;
-			&.a {
-				.card {
-					&.one {
-						background: url(../img/stamp1.png) $leftPos $topPos no-repeat #292A33;
-					}
-					&.two {
-						background: url(../img/stamp2.png) $leftPos $topPos no-repeat #333540;
-					}
-					&.three {
-						background: url(../img/stamp3.png) $leftPos $topPos no-repeat #3D3F4D;
-					}
-				}
-			}
-			&.b {
-				.card {
-					&.one {
-						background: url(../img/stamp4.png) $leftPos $topPos no-repeat #292A33;
-					}
-					&.two {
-						background: url(../img/stamp5.png) $leftPos $topPos no-repeat #333540;
-					}
-					&.three {
-						background: url(../img/stamp6.png) $leftPos $topPos no-repeat #3D3F4D;
-					}
-				}
-			}
-
-
-		}
-		
-	}
-
 }
 
 	

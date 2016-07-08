@@ -1,3 +1,175 @@
+@charset "UTF-8";
+.slider-list {
+  position: relative;
+  text-align: center;
+  font-size: 0; }
+.slider-list .wrap-bg img {
+  max-width: 100%; }
+.slider-list .wrap-tx {
+  position: absolute;
+  width: 55%;
+  left: 22.5%;
+  top: 25%; }
+.slider-list #slider-item1 {
+  background-color: #3B6BAD; }
+.slider-list #slider-item1 .wrap-bg {
+  height: 450px;
+  background: url(../img/banner1.jpg) center center no-repeat #3f6dac; }
+.slider-list #slider-item1 .wrap-tx {
+  display: inline-block;
+  height: 0;
+  width: 55%;
+  padding-top: 84px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url("../img/b1-text1.png") transparent no-repeat center top; }
 
+.wrap-digest {
+  position: relative;
+  z-index: 1000;
+  width: 1190px;
+  margin: -130px auto 0; }
+.digest {
+  background-color: #f5f5f5;
+  float: left;
+  width: 49%;
+  margin-left: .5%; }
+.digest .wrap-tx {
+  height: 275px; }
+.digest .wrap-tx h2 {
+  position: relative;
+  font-size: 22px;
+  padding: 20px 0 10px;
+  color: #333;
+  line-height: 1em;
+  font-weight: 400;
+  z-index: 2;
+  text-align: center; }
+.digest .wrap-tx p {
+  position: relative;
+  width: 70%;
+  font-size: 13px;
+  color: #999;
+  line-height: 18px;
+  z-index: 2;
+  margin: 0 auto;
+  font-family: tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif; }
+.digest .wrap-tx img {
+  position: relative;
+  margin-top: -60px;
+  width: 100%;
+  z-index: 1; }
+.digest .wrap-card {
+  letter-spacing: -.31em;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2; }
+.digest .card {
+  height: 100px;
+  width: 33.33333333%;
+  display: inline-block;
+  *zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  color: #fff;
+  text-align: center; }
+.digest .card h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 35px;
+  text-shadow: 0px 2px 2px #333;
+  white-space: nowrap; }
+.digest.a .card.one {
+  background: url(../img/stamp1.png) -10px -10px no-repeat #292A33; }
+.digest.a .card.two {
+  background: url(../img/stamp2.png) -10px -10px no-repeat #333540; }
+.digest.a .card.three {
+  background: url(../img/stamp3.png) -10px -10px no-repeat #3D3F4D; }
+.digest.b {
+  margin-left: 10px; }
+.digest.b .card.one {
+  background: url(../img/stamp4.png) -10px -10px no-repeat #292A33; }
+.digest.b .card.two {
+  background: url(../img/stamp5.png) -10px -10px no-repeat #333540; }
+.digest.b .card.three {
+  background: url(../img/stamp6.png) -10px -10px no-repeat #3D3F4D; }
+
+.section.business {
+  margin-top: 48px;
+  padding-bottom: 10px; }
+.section.business .divide-head {
+  padding: 40px 0 30px 0;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  font-weight: normal; }
+.section.business .widget {
+  height: 260px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  border-top: 1px solid #fff; }
+.section.business .widget.a {
+  border-color: #F84541; }
+.section.business .widget.a .wg-caption {
+  background-color: #F84541; }
+.section.business .widget.b {
+  border-color: #7055B2; }
+.section.business .widget.b .wg-caption {
+  background-color: #7055B2; }
+.section.business .widget.c {
+  border-color: #4762B3; }
+.section.business .widget.c .wg-caption {
+  background-color: #4762B3; }
+.section.business .wg-caption {
+  display: block;
+  width: 258px;
+  height: 230px;
+  padding: 15px 20px;
+  float: left;
+  color: #fff;
+  cursor: pointer;
+  background-color: #f64648; }
+.section.business .wg-caption h3 {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 50px; }
+.section.business .wg-caption p {
+  font-size: 12px;
+  color: #fefefe;
+  line-height: 18px;
+  margin-top: -8px; }
+.section.business .wg-content {
+  letter-spacing: -.4em;
+  margin-left: 298px;
+  background-color: #fff; }
+.section.business .wg-content .card {
+  display: inline-block;
+  *zoom: 1;
+  letter-spacing: normal;
+  width: 33.33333333%;
+  text-align: center;
+  height: 259px;
+  overflow: hidden;
+  border-right: 1px solid #e3e3e3;
+  cursor: pointer; }
+.section.business .wg-content .card h4 {
+  font-weight: normal;
+  font-size: 18px;
+  padding: 25px 0 20px 0;
+  color: #333; }
+.section.business .wg-content .card img {
+  width: 150px;
+  transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  /* Firefox 4 */
+  -webkit-transition: all 0.25s ease-out;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.25s ease-out; }
+.section.business .wg-content .card.no-border {
+  border-right: none; }
+.section.business .wg-content .card:hover img {
+  width: 170px; }
 
 /*# sourceMappingURL=home.css.map */
