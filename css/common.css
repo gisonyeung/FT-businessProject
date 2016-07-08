@@ -4,9 +4,6 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
   padding: 0;
   font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif; }
 
-body {
-  min-height: 3000px; }
-
 ul, ol {
   list-style-type: none; }
 
@@ -79,5 +76,44 @@ a {
 
 .section.grey {
   background-color: #F5F5F5; }
+
+.footer {
+  border-top: 1px solid #e5e5e5;
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 25px; }
+.footer .navfooter {
+  font-size: 14px;
+  padding: 30px 0 15px 0; }
+.footer .navfooter a {
+  color: #666;
+  padding-left: 15px;
+  transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  /* Firefox 4 */
+  -webkit-transition: all 0.15s ease-out;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.15s ease-out; }
+.footer .navfooter a:first-child {
+  padding-left: 0; }
+.footer .navfooter a:hover {
+  color: #1199ed; }
+.footer .info {
+  color: #999;
+  font-size: 12px; }
+.footer .info span {
+  padding: 0 4px; }
+.footer .info span:first-child {
+  padding: 0; }
+.footer .info a {
+  color: #999;
+  transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  /* Firefox 4 */
+  -webkit-transition: all 0.15s ease-out;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.15s ease-out; }
+.footer .info a:hover {
+  color: #1199ed; }
 
 /*# sourceMappingURL=common.css.map */

@@ -27,7 +27,7 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
 }
 
 body {
-	min-height: 3000px;
+	// min-height: 3000px;
 }
 
 ul, ol {
@@ -38,6 +38,8 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+
+$themeColor: #1199ed;
 
 // 清除浮动
 .fixed {
@@ -105,7 +107,7 @@ a {
     			}
 
     			&:hover {
-    				color: #1199ed;
+    				color: $themeColor;
     			}
     			@include transition();
     		}
@@ -121,6 +123,46 @@ a {
 		background-color: #F5F5F5;
 	}
 }
+
+.footer {
+	border-top: 1px solid #e5e5e5;
+	background-color: #fff;
+	text-align: center;
+	padding-bottom: 25px;
+	.navfooter {
+		font-size: 14px;
+		padding: 30px 0 15px 0;
+		a {
+			color: #666;
+			padding-left: 15px;
+			@include transition();
+			&:first-child {
+				padding-left: 0;
+			}
+			&:hover {
+				color: $themeColor;
+			}
+		}
+	}
+	.info {
+		color: #999;
+		font-size: 12px;
+		span {
+			padding: 0 4px;
+			&:first-child {
+				padding: 0;
+			}
+		}
+		a {
+			color: #999;
+			@include transition();
+			&:hover {
+				color: $themeColor;
+			}
+		}
+	}
+}
+
 
 	
 // }

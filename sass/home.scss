@@ -20,9 +20,14 @@
 	background: url($url) transparent no-repeat center top;
 }
 
+$themeColor: #1199ed;
 
 .banner {
 
+}
+
+.content {
+	margin-bottom: 120px;
 }
 
 .slider-list {
@@ -252,5 +257,126 @@
 		}
 
 	}
+	&.notice {
+		position: relative;
+		padding-top: 40px;
+		.widget {
+			border: 1px solid #e3e3e3;
+			float: left;
+		}
+		.wrap-head {
+		    border-bottom: 1px solid #e3e3e3;
+	 		position: relative;
+			h3 {
+			    
+			    margin-left: 20px;
+			    border: none;
+			    color: #333;
+			    font-weight: normal;
+			    font-size: 14px;
+			    height: 40px;
+			    line-height: 40px;
+			    .icon-square {
+			    	display: inline-block;
+		    	    background: url(../img/icon-square.png) center center no-repeat;
+				    height: 8px;
+				    width: 8px;
+				    margin-right: 2px;
+				    vertical-align: middle;
+			    }
+			    a {
+			    	position: absolute;
+		    	    color: #999;
+			    	right: 1em;
+			    	font-size: 12px;
+			    	@include transition();
+			    	&:hover {
+			    		color: $themeColor;
+			    	}
+			    }
+			}
+		}
+		.wrap-content {
+			padding: 20px 18px 17px 20px;
+			ul {
+				font-size: 12px;
+				color: #333;
+				li {
+					position: relative;
+				}
+				a {
+					display: block;
+				    line-height: 18px;
+				    @include transition();
+				    .date {
+				    	position: absolute;
+				    	right: 0px;
+				    	color: #999;
+				    }
+				    &:hover {
+				    	color: $themeColor;
+				    	.date {
+					    	color: $themeColor;
+					    }
+				    }
+				}
+				.text {
+					display: inline-block;
+					width: 80%;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+		   		    overflow: hidden;
+				}
+			}
+		}
+		.wrap-news {
+			width: 64%
+	
+		}
+		.wrap-company {
+			position: absolute;
+			right: 0;
+			width: 35%;
+		}
+	}
+
+	&.partner {
+		margin-top: 40px;
+		.wrap-head {
+			position: relative;
+			font-size: 18px;
+			margin: 18px 0 12px 0;
+			a {
+				position: absolute;
+				right: 0;
+				color: #999;
+				line-height: 26px;
+				font-size: 12px;
+				@include transition();
+				&:hover {
+					color: $themeColor;
+				}
+			}
+		}
+		ul {
+			letter-spacing: -.31em;
+			border: 1px solid #e3e3e3;
+			border-width: 1px 0px 0px 1px;
+			li {
+				text-align: center;
+				display: inline-block;
+				*zoom: 1;
+				width: 12.5%;
+				min-height: 70px;
+				float: left;
+				margin-left: -1px;
+				border: 1px solid #e3e3e3;
+				border-width: 0 1px 1px 0;
+			}
+		}
+	}
 }
+
+
+
 
