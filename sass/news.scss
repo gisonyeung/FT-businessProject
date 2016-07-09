@@ -1,0 +1,220 @@
+@charset "utf-8";
+$themeColor: #1199ed;
+@mixin transition($obj: all, $time: 0.15s, $type: ease-out) {
+	transition: $obj $time $type;
+	-moz-transition: $obj $time $type;	/* Firefox 4 */
+	-webkit-transition: $obj $time $type;	/* Safari 和 Chrome */
+	-o-transition: $obj $time $type;
+}
+
+@mixin bgsize($width, $height) {
+	display: inline-block;
+	height: 0;
+	width: $width;
+	padding-top: $height;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+@mixin bgimg($url) {
+	background: url($url) transparent no-repeat center top;
+}
+
+body {
+	background-color: #fff;
+}
+
+.main-wrapper {
+
+}
+
+
+.news-banner {
+	position: relative;
+    width: auto;
+    overflow: hidden;
+    background: -webkit-gradient(linear,0 50%,100% 50%,from(#dde4ee),to(#1c1d18));
+    background: -webkit-linear-gradient(0deg,#dde4ee,#dde4ee,#1c1d18,#1c1d18);
+    background: -o-linear-gradient(0deg,#dde4ee,#dde4ee,#1c1d18,#1c1d18);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#e0e7f0, endColorstr=#1c1d18);
+	
+	img {
+		display: block;
+		width: 100%;
+		max-width: 1190px;
+		margin: 0 auto;
+	}
+
+	@at-root {
+		.news-nav {
+			position: relative;
+			z-index: 30;
+			letter-spacing: -.31em;
+			background-color: #fff;
+			li {
+				letter-spacing: normal;
+				float: left;
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+				width: 50%;
+				line-height: 40px;
+				border-bottom: 1px solid #e5e5e5;
+				margin-left: -2px;
+				text-align: center;
+				&.active {
+					color: #fff;
+					background-color: $themeColor
+				}
+			}
+		}
+	}
+}
+
+.news-list {
+	margin-top: 30px;
+	@at-root {
+		.news-item {
+		    padding: 0 16px;
+		    margin: 0 auto 25px;
+		    color: #999;
+		    width: 100%;
+		    box-sizing: border-box;
+
+		    .news-top {
+			    width: 100%;
+    			overflow: auto;
+    			.news-title {
+				    float: left;
+				    overflow: hidden;
+				    text-overflow: ellipsis;
+				    word-wrap: normal;
+				    white-space: nowrap;
+				    color: #444;
+				    font-size: 16px;
+    				max-width: 75%;
+    				a {
+    					color: #333;
+    					font-size: 16px;
+    				}
+    			}
+    			.news-date {
+    				float: right;
+    				font-size: 14px;
+    			}
+		    }
+
+		    .news-description {
+	    	    font-size: 13px;
+   			 	border-bottom: 1px dotted #ccc;
+   			 	p {
+		 		    margin: 1em 0 24px;
+   			 	}
+   			 	a {
+   			 		text-decoration: none;
+				    overflow: hidden;
+				    text-overflow: ellipsis;
+				    word-wrap: break-word;
+				    display: inline;
+   					white-space: normal;
+   					&.detail {
+   						color: #06c;
+   					}
+   			 	}
+		    }
+		}
+	}
+}
+
+.pagination {
+	width: 100%;
+    margin: -10px auto 100px;
+	text-align: center;
+    font-weight: lighter;
+    color: #666;
+    font-size: 12px;
+    font-family: Tahoma,SimSun,Arial;
+
+    .pagination-inner {
+	    display: inline-block;
+    }
+
+    a {
+        min-width: 16px;
+	    border: 1px solid #fff;
+	    display: block;
+	    float: left;
+	    height: 20px;
+	    margin-right: 3px;
+	    padding: 0 2px;
+	    line-height: 20px;
+	    text-align: center;
+	    vertical-align: top;
+	    white-space: nowrap;
+	    overflow: hidden;
+    	border-radius: 2px;
+		
+
+    	&:hover {
+    		border: 1px solid #e5e5e5;
+		    background-color: #e5e5e5;
+		    color: #666;
+    	}
+    }
+
+    .pagination-curr {
+    	min-width: 16px;
+	    border: 1px solid #fff;
+	    display: block;
+	    float: left;
+	    height: 20px;
+	    margin-right: 3px;
+	    padding: 0 2px;
+	    line-height: 20px;
+	    text-align: center;
+	    vertical-align: top;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    border-radius: 2px;
+        font-weight: 700;
+	    color: #fff;
+	    background-color: #EC4F2F;
+	    border: 1px solid #EC4F2F;
+    }
+
+    .pagination-break {
+    	min-width: 16px;
+	    border: 1px solid #fff;
+	    display: block;
+	    float: left;
+	    height: 20px;
+	    margin-right: 3px;
+	    padding: 0 2px;
+	    line-height: 20px;
+	    text-align: center;
+	    vertical-align: top;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    border-radius: 2px;
+	    border: 0;
+   	 	line-height: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1190px) {
+
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+
+
+
+
+}
