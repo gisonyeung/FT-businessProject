@@ -123,6 +123,57 @@ body {
     text-indent: -9999px;
     overflow: hidden;
     background: url("../img/b1-text1.png") transparent no-repeat center top;
-    background-size: contain; } }
+    background-size: contain; }
+
+  .section.part1 .wrap-text {
+    padding: 20px; }
+  .section.part1 .wrap-text p {
+    margin: 2px 0; }
+  .section.part1 .cards {
+    padding-bottom: 20px; }
+  .section.part1 .cards li {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    height: 250px;
+    box-sizing: border-box;
+    border: 0 solid #f5f5f5;
+    border-width: 20px 20px 0; }
+  .section.part1 .cards h3 {
+    margin: 20px 0 10px;
+    font-size: 16px; }
+  .section.part1 .cards .wrap-tx {
+    padding: 0 5%;
+    font-size: 14px; }
+  .section.part1 .cards img {
+    bottom: 27px; }
+  .section.part2 {
+    padding: 15px 20px 20px; }
+  .section.part2 h2 {
+    font-size: 16px;
+    font-weight: normal; }
+  .section.part2 .wrap-tx {
+    margin-top: 22px;
+    padding: 20px 10px;
+    height: 340px; }
+  .section.part3 {
+    padding: 20px 20px 20px; }
+  .section.part3 h2 {
+    font-size: 16px;
+    font-weight: normal; }
+  .section.part3 .cards .card {
+    display: block;
+    float: none;
+    width: 100%; }
+  .section.part3 .cards .card.b {
+    margin-top: 20px;
+    margin-left: 0; }
+  .section.part3 .wrap-tx {
+    margin-top: 12px;
+    height: 340px;
+    background-color: #fff; }
+  .section.part3 .wrap-tx img {
+    display: none; } }
 
 /*# sourceMappingURL=trade.css.map */
