@@ -1,0 +1,198 @@
+body {
+  background-color: #f5f5f5; }
+
+.slider-list {
+  position: relative;
+  text-align: center;
+  font-size: 0; }
+.slider-list .wrap-tx {
+  position: absolute;
+  width: 55%;
+  left: 22.5%;
+  top: 35%; }
+.slider-list #slider-item1 {
+  background-color: #3B6BAD; }
+.slider-list #slider-item1 .wrap-bg {
+  height: 320px;
+  background: url(../img/banner-about.jpg) center center no-repeat #4C6D9A; }
+.slider-list #slider-item1 img {
+  display: none; }
+
+.navbar {
+  letter-spacing: -.31em;
+  font-size: 1em;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  background: #FFF;
+  z-index: 10; }
+.navbar li {
+  letter-spacing: normal;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  width: 25%;
+  *width: 24.85%;
+  border-left: 1px solid #e5e5e5;
+  box-sizing: border-box; }
+.navbar li:first-child {
+  border-left: 0; }
+.navbar li a {
+  color: #333;
+  text-decoration: none;
+  display: block; }
+.navbar li a.active {
+  background-color: #1199ed;
+  color: #fff; }
+
+.stone-text {
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+  font-size: 18px; }
+
+.main {
+  padding: 0 30px 100px;
+  margin-top: 50px;
+  font-size: 14px; }
+.main .wrap-content {
+  position: relative;
+  margin-top: 20px; }
+.main .wrap-content h2 {
+  text-align: center; }
+.main .wrap-content p {
+  text-indent: 2em;
+  margin: 15px 0; }
+
+.line {
+  width: 100%;
+  max-width: 650px;
+  height: 3px;
+  margin: 0 auto;
+  background: url(../img/line.png) no-repeat top center;
+  position: relative; }
+
+.events {
+  padding: 0 100px; }
+.events li {
+  display: block;
+  *zoom: 1;
+  margin-top: 10px;
+  width: 100%; }
+.events li:after {
+  content: '';
+  display: table;
+  clear: both; }
+.events li:first-child {
+  margin-top: 30px; }
+.events li h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333; }
+.events li p {
+  margin: 10px 0 0 0 !important;
+  font-size: 14px;
+  color: #666;
+  text-indent: 0 !important; }
+.events li .circle {
+  position: absolute;
+  left: 50%;
+  margin-left: -11px;
+  margin-top: -10px;
+  width: 16px;
+  height: 16px;
+  background: #1199ed;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  z-index: 20; }
+.events .left {
+  position: relative;
+  padding: 15px;
+  width: 40%;
+  border: 1px solid #e5e5e5;
+  float: left; }
+.events .left:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  top: -1px;
+  border-color: #e5e5e5 transparent transparent;
+  border-width: 12px 12px 0 0; }
+.events .left:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  top: 0;
+  border-width: 5px 5px 0 0;
+  border-color: #FFF transparent transparent;
+  border-width: 10px 10px 0 0; }
+.events .right {
+  position: relative;
+  padding: 15px;
+  width: 40%;
+  border: 1px solid #e5e5e5;
+  float: right; }
+.events .right:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -12px;
+  width: 0;
+  height: 0;
+  top: -1px;
+  border-style: solid;
+  border-color: transparent #e5e5e5 transparent transparent;
+  border-width: 0 12px 12px 0; }
+.events .right:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -9px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  top: 0;
+  border-width: 0 5px 5px 0;
+  border-color: transparent #FFF transparent;
+  border-width: 0 10px 10px 0; }
+
+.events-line {
+  width: 2px;
+  height: 100%;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  top: 1px;
+  margin-left: -1px;
+  z-index: 0; }
+
+@media screen and (max-width: 768px) {
+  .slider-list {
+    position: relative;
+    text-align: center;
+    font-size: 0; }
+  .slider-list #slider-item1 .wrap-bg {
+    display: none;
+    background: none; }
+  .slider-list #slider-item1 img {
+    display: block;
+    width: 100%; }
+
+  .events {
+    padding: 0 28px; }
+  .events .left, .events .right {
+    padding: 5px; }
+  .events li p {
+    margin: 5px 0 0 0 !important; } }
+
+/*# sourceMappingURL=about.css.map */
