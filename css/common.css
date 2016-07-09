@@ -4,9 +4,6 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
   padding: 0;
   font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif; }
 
-body.hidden {
-  overflow: hidden; }
-
 ul, ol {
   list-style-type: none; }
 
@@ -82,7 +79,11 @@ a {
   color: #333; }
 .header .ft-list li a:hover {
   color: #1199ed; }
+.header .ft-list li.active a {
+  color: #1199ed; }
 
+.section {
+  background-color: #fff; }
 .section.grey {
   background-color: #F5F5F5; }
 
@@ -133,6 +134,9 @@ a {
     width: 100%;
     max-width: 990px; } }
 @media screen and (max-width: 768px) {
+  body.hidden {
+    overflow: hidden; }
+
   .sm-show {
     display: block; }
 
