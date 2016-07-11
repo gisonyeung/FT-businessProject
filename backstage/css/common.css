@@ -1,4 +1,7 @@
 body {
   font-family: "Helvetica Neue", Helvetica,  Microsoft Yahei, Arial, sans-serif; }
 
+tbody tr:first-child td {
+  border-top: 0; }
+
 /*# sourceMappingURL=common.css.map */

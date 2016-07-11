@@ -112,10 +112,10 @@
                     <div class="row-fluid filter-block">
                         <div class="pull-right">
                             <div class="btn-group">
-                                <button class="glow left">新闻公告</button>
-                                <button class="glow right">企业动态</button>
+                                <button class="glow left filter-btn" data-target="type-1">新闻公告</button>
+                                <button class="glow right filter-btn" data-target="type-2">企业动态</button>
                             </div>
-                            <input type="text" class="search order-search" placeholder="搜索关键词…" />
+                            <input type="text" class="search news-search" placeholder="搜索关键词…" />
                         </div>
                     </div>
 
@@ -129,14 +129,14 @@
                                     <th class="span2">
                                         类型
                                     </th>
-                                    <th class="span3">
+                                    <th class="span2">
                                         时间
                                     </th>
-                                    <th class="span3">
+                                    <th class="span5">
                                         <span class="line"></span>
                                         标题
                                     </th>
-                                    <th class="span3">
+                                    <th class="span2">
                                         <span class="line"></span>
                                         状态
                                     </th>
@@ -147,81 +147,6 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- row -->
-                                <tr class="first">
-                                    <td>
-                                        1
-                                    </td> 
-                                    <td>
-                                        新闻公告
-                                    </td>
-                                    <td>
-                                        2016-07-10
-                                    </td>
-                                    <td>
-                                        <a href="#">额特意赶到后的法规和人员突击体育局大幅提高恢复通航h</a>
-                                    </td>
-                                    <td>
-                                        <span class="label label-success">上线中</span>
-                                    </td>
-                                    <td>
-                                        <div class="btn-group small audio">
-                                            <button class="glow left">编辑</button>
-                                            <button class="glow middle">下线</button>
-                                            <button class="glow right">删除</button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2
-                                    </td>
-                                    <td>
-                                        新闻公告
-                                    </td>
-
-                                    <td>
-                                        2016-07-10
-                                    </td>
-                                    <td>
-                                        <a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>
-                                    </td>
-                                    <td>
-                                        <span class="label label-success">上线中</span>
-                                    </td>
-                                    <td>
-                                        <div class="btn-group small audio">
-                                            <button class="glow left">编辑</button>
-                                            <button class="glow middle">下线</button>
-                                            <button class="glow right">删除</button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        企业动态
-                                    </td>
-
-                                    <td>
-                                        2016-07-10
-                                    </td>
-                                    <td>
-                                        <a href="#">哈哈哈哈哈哈哈哈哈哈哈哈哈</a>
-                                    </td>
-                                    <td>
-                                        <span class="label">已下线</span>
-                                    </td>
-                                    <td>
-                                        <div class="btn-group small audio">
-                                            <button class="glow left">重新发布</button>
-                                            <button class="glow middle">编辑</button>
-                                            <button class="glow right">删除</button>
-                                        </div>
-                                    </td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -237,6 +162,46 @@
     <script src="../js/jquery-latest.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/theme.js"></script>
+    <script src="../js/allnews.js"></script>
+    <!-- 列模板 -->
+    <script type="text/template" id="tr_tpl">
+        <tr id='item-{{id}}' class="news-item {{type}}">
+            <td>
+                {{id}}
+            </td>
+            <td>
+                {{messageType}}
+            </td>
+
+            <td>
+                {{time}}
+            </td>
+            <td>
+                <a href="{{url}}">{{title}}</a>
+            </td>
+            <td>
+                <span class="label {{iOnline}}">{{status}}</span>
+            </td>
+            <td>
+                <div class="btn-group small audio" data-id="{{id}}">
+                    {{handle}}
+                    <button class="glow right handle-delete">删除</button>
+                </div>
+            </td>
+        </tr>
+    </script>
+    <!-- 发布中：操作按钮模板 -->
+    <script type="text/template" id="btn_tpl1">
+        <button class="glow left handle-edit">编辑</button>
+        <button class="glow middle handle-offline">下线</button>
+    </script>
+    <!-- 已下线：操作按钮模板 -->
+    <script type="text/template" id="btn_tpl2">
+        <button class="glow left handle-publish">重新发布</button>
+        <button class="glow middle handle-edit">编辑</button>
+    </script>
+
+
 
 </body>
 </html>
