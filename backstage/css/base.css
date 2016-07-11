@@ -1,0 +1,335 @@
+body {
+	font-family: Microsoft YaHei,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 15px;
+	background-color: #f7f7f7;
+}
+
+th {
+	word-break:break-all;
+}
+
+thead th {
+	font-weight: bold;
+}
+tbody th {
+	font-weight: normal;
+}
+#wrap {
+	width: 1170px;
+	margin: 20px auto;
+	padding: 0 35px;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.important {
+	color: #F3464F;
+	margin: 0 2px;
+}
+
+.limitWidth {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.minWidth {
+	min-width: 1170px;
+	margin: 0 auto;
+}
+
+.navHeader {
+	background-color: #264480;
+	margin-bottom: 0;
+}
+
+.addRight {
+	margin-right: 4px;
+}
+
+.addLeft {
+	margin-left: 4px;
+}
+
+.menu {
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+
+.sp-logo {
+	
+	margin: 0 10px;
+	margin-top: 3px;
+}
+
+.container {
+	padding: 0;
+}
+
+.content {
+	width: 1170px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	background-color: #fff;
+	border: 1px solid #dae3e9;
+	box-shadow: -3px 3px 3px -2px #f1f1f3;
+	border-radius: 5px;
+	min-height: 800px;
+	padding-bottom: 50px;
+	overflow: hidden;
+}
+
+.subNav .nav-tabs {
+    border-bottom: 3px solid #0B6DDC;
+}
+.subNav .nav-tabs>li.active>a, .subNav .nav-tabs>li.active>a:focus, .subNav .nav-tabs>li.active>a:hover {
+    color: #fff;
+    cursor: default;
+    background-color: #0B6DDC;
+    border: 1px solid #0B6DDC;
+}
+.subNav .nav>li>a {
+    padding: 8px 15px;
+    border-radius: 0;
+    margin-bottom: 1px;
+    color: #333;
+}
+
+.main {
+	padding: 0 34px;
+}
+
+
+.subtitle {
+    border-left: 5px solid #1b809e;
+    border-radius: 3px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+.row {
+    margin: 13px 0;
+}
+.part {
+	margin-top: 20px;
+}
+.partContent {
+    margin: 30px 0;
+}
+.handleBtn {
+	text-align: right;
+}
+.multiSelect1, .multiSelect{
+    float: right;
+    margin-right: 10px!important;
+}
+.curStatus {
+	margin-left: 10px;
+	font-size: 14px;
+	color: #337AB7;
+}
+.switch {
+	cursor: pointer;
+}
+.switch:hover .curStatus {
+	text-decoration: underline;
+}
+.switchPanel {
+	display: none;
+}
+.switchPanel.show {
+	display: block;
+}
+.paging {
+    position: relative;
+    float: right;
+}
+
+
+.pageAcount {
+    position: absolute;
+    right: 105%;
+    top: 25px;
+    width: 4em;
+    font-size: 14px;
+    color: #999;
+}
+
+.lastPage {
+    cursor: pointer;
+    color: #337ab7;
+}
+.lastPage:hover {
+    text-decoration: underline;
+}
+.clearfix {
+	*zoom: 1;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.small.table {
+	font-size: 14px;
+}
+.relative {
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*覆盖Bs：徽章背景色*/
+.navbar .badge {
+	background-color: #C91C17;
+}
+/*覆盖Bs：小窗口页面菜单按钮*/
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #000;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+/*覆盖Bs：nav hover*/
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #ccc;
+    background-color: transparent;
+}
+/*覆盖Bs：nav focus static*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #fff;
+}
+/*覆盖Bs：nav dropdown*/
+.navHeader.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: #fff;
+}
+
+/*覆盖Bs：取消响应*/
+.navbar-nav>li {
+    float: left;
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+.navbar-right {
+    float: right!important;
+    margin-right: -15px;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: -15px;
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/*雪碧图*/
+.sprite{
+	display: inline-block;
+	background:url(../img/sprite.png) no-repeat ;
+}
+.sp-logosign{height:35px;width:35px;background-position:0 0;}
+.sp-logo{height:35px;width:162px;background-position:0 -41px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+	/*覆盖Bs：小窗口页面菜单按钮*/
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	    color: #fff;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+	    color: #ccc;
+	    background-color: transparent;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*禁用自适应*/
+@media (max-width: 768px) {
+	.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}
+ 	.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+   		float: left;
+}

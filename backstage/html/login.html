@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- 通用样式 -->
+    <link href="../css/base.css" rel="stylesheet">
+
+    <!-- 私有样式 -->
+    <link href="../css/login.css" rel="stylesheet">
+
+	<!-- 图标 -->
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome-ie7.min.css">
+
+	<title>登录 - 夫天后台管理系统</title>
+</head>
+<body>
+	<h1 class="title">夫天后台管理系统</h1>
+	<div class="box">
+		<div class="header">
+			<span class="tab tab-login active">登录</span>
+			<span class="tab tab-register">注册</span>
+		</div>
+		<div class="boxContent">
+			<div class="panel login">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 errorBox l-error text-danger ">错误信息</div>
+				</div>
+				<form action="/spg/user/pc-login" method="POST">
+				<div class="row">
+					<div class="col-sm-4 text-right">用户名：</div>
+					<div class="col-sm-6">
+						<input type="text" class="form-control colorInput" id="l-username" name="userName">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 text-right">密码：</div>
+					<div class="col-sm-6">
+						<input type="password" class="form-control colorInput" id="l-password" name="password">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-4">
+						<input type="submit" class="form-control btn btn-primary" id="loginBtn" value="登 录">
+					</div>
+				</div>
+				</form>
+			</div>
+			<div class="panel register">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 errorBox r-error text-danger ">错误信息</div>
+				</div>
+				<form action="/spg/user/registering" method="POST">
+				<div class="row">
+					<div class="col-sm-4 text-right">用户名：</div>
+					<div class="col-sm-6">
+						<input type="text" class="form-control colorInput" id="r-username" name="userName">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 text-right">密码：</div>
+					<div class="col-sm-6">
+						<input type="password" class="form-control colorInput" id="r-password" name="password">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 text-right">确认密码：</div>
+					<div class="col-sm-6">
+						<input type="password" class="form-control colorInput" id="cpassword" name=confirmPassword>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 text-right">内部注册码：</div>
+					<div class="col-sm-6">
+						<input type="text" class="form-control colorInput" id="code" name="code">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-4">
+						<input type="submit" class="form-control btn btn-primary" id="registerBtn" value="注 册">
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+		
+	</div>
+	<div class="footer">*推荐使用ie10以上版本的ie浏览器或Chrome内核浏览器访问本站</div>
+	<script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>
