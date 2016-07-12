@@ -39,13 +39,13 @@ $(document).ready(function() {
 	// 获取url查询字符串并保存在全局变量中
 	var param = {};
 	(function () {
-		var search = location.search.replace('?', '');
-		search = searchString.split('&');
+		var search = location.search.replace('?', '').split('&');
 		for(var i = 0; i < search.length; i++) {
 			var item = search[i].split('=');
 			param[item[0]] = item[1];
 		};
-		param.pageNow = parseInt(param.pageNow, 10);
+		param.pageNow = parseInt(param.pageNow, 10) || 1;
+		param.type = param.type || 'news';
 	})()
 
 	/*
@@ -62,11 +62,11 @@ $(document).ready(function() {
 	// 页码更新
 	function updatePage() {
 		var pagination = $('.pagination'),
-			curPage = param.pageNow || 1,
+			curPage = param.pageNow,
 			allPage = parseInt(pagination.attr('data-all'), 10) || 1,
-			page_tpl_curr = $('#page_tpl_curr').html(),
-			page_tpl_break = $('#page_tpl_break').html(),
-			page_tpl_spec = $('#page_tpl_spec').html(),
+			page_tpl_curr = $('#page_tpl_curr').html().trim(),
+			page_tpl_break = $('#page_tpl_break').html().trim(),
+			page_tpl_spec = $('#page_tpl_spec').html().trim(),
 			allpagesHTML = '',
 			pageArray = calPage(curPage, allPage);
 		
@@ -86,7 +86,7 @@ $(document).ready(function() {
 			var item = '';
 			var page = pageArray[i];
 			if( page == param.pageNow ) {
-				item = page_tpl_spec.replace('{{number}}', page);
+				item = page_tpl_curr.replace('{{number}}', page);
 			} else {
 				item = page_tpl_spec.replace('{{url}}', createUrl(page))
 									.replace('{{number}}', page);
@@ -97,6 +97,7 @@ $(document).ready(function() {
 		if( pageArray[len - 1] != allPage) {
 			var item = page_tpl_break.replace('{{url}}', createUrl(allPage))
 									 .replace('{{number}}', allPage);
+			allpagesHTML += item;						 
 		}
 		// 写入DOM
 		$('#nextPage').before($(allpagesHTML));
