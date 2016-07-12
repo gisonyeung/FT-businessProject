@@ -160,7 +160,7 @@ $(document).ready(function() {
 
 	// 过滤搜索框
 	$('.news-search').on('keyup', function() {
-		
+		var value = $(this).val();
 		if(/\S/.test(value)) { // 不为空
 			$('.news-item').hide().filter(":contains('"+$(this).val()+"')").show();
 		} else { // 为空则取消过滤
