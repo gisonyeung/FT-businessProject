@@ -1,13 +1,13 @@
 $(document).ready(function() {
-
+    var baseUrl = 'http://' + window.location.host;
 	$("input:checkbox, input:radio").uniform();
 
     if( !window.name ) {
-        alert('无内容');
-        location.href = './allnews.html';
+        // alert('无内容');
+        // location.href = './allnews.html';
     }
 
-    newsObj = JSON.parse(window.name);
+    // newsObj = JSON.parse(window.name);
 
     // 修改内容
     $('#news-title').val(newsObj.title);
@@ -25,14 +25,14 @@ $(document).ready(function() {
         "image": false,
         "color": true,
         "html": true,
-        "events": {
-            load: function(){
-                // console.log("Loaded!");
-            },
-            blur: function(){
-            	// console.log($("#detail").val());
-            }
-        }
+        // "events": {
+        //     load: function(){
+        //         // console.log("Loaded!");
+        //     },
+        //     blur: function(){
+        //     	// console.log($("#detail").val());
+        //     }
+        // }
     });
 
 
@@ -46,19 +46,24 @@ $(document).ready(function() {
                 content: $('#detail').val(), 
                 title: $('#news-title').val(), 
                 messageType: $('#newsTypeRadio2').parent().hasClass('checked') ? '0' : '1', 
-                summary $('#news-summary').val(), 
+                summary: $('#news-summary').val(), 
                 display: newsObj.display,
             };
+
+            if( !checkForm(latestNews) ) {
+                return false;
+            }
+
             $.ajax({
                 url: baseUrl + '/news/modify',
                 method: 'POST',
                 data: latestNews,
                 success: function(result) {
                     if( result == 'success' ) {
-                        alert('修改成功');
+                        alert('修改公告成功');
                         location.href = './allnews.html';
                     } else {
-                        alert('修改失败，原因：' + result);
+                        alert('修改公告失败，原因：' + result);
                     }
                 },
                 error: function() {
@@ -67,5 +72,30 @@ $(document).ready(function() {
             });
         }
     });
+
+
+    function checkForm(data) {
+
+        if( !data.newsId ) {
+            return false;
+        }
+
+        if( !news.title ) {
+            $('#news-title').focus();
+            alert('标题不能为空');
+            return false;
+        } else if( !news.summary ) {
+            $('#news-summary').focus();
+            alert('摘要不能为空');
+            return false;
+        } else if( !news.content ) {
+            $('#detail').focus();
+            alert('内容不能为空');
+            return false;
+        }
+
+        return true;
+
+    }
 
 });

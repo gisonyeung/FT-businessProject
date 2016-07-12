@@ -56,7 +56,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="./allnews.html">查看公告</a></li>
-                        <li><a href="./addnews.html">发布新公告</a></li>
+                        <li><a href="./addnews.html">新增公告</a></li>
                         <li><a href="./addemploy.html">发布招聘</a></li>
                     </ul>
                 </li>
@@ -81,7 +81,7 @@
                 </a>
                 <ul class="active submenu">
                     <li><a href="./allnews.html">全部列表</a></li>
-                    <li><a href="./addnews.html" class="active">发布新公告</a></li>
+                    <li><a href="./addnews.html" class="active">新增公告</a></li>
                 </ul>
             </li>
             <li>
@@ -108,7 +108,7 @@
 
                 <div class="row-fluid form-wrapper">
                     <div class="span12">
-                        <h4>发布新公告</h4>
+                        <h4>新增公告</h4>
                     </div>
                     <br>
                     <br>
@@ -117,25 +117,25 @@
                     <div class="span12 column">
                         <div class="field-box">
                             <label>公告标题:</label>
-                            <input class="span8 inline-input" data-toggle="tooltip" data-trigger="focus" data-placement="right" type="text" data-original-title="输入公告标题，请注意控制字数">
+                            <input class="span8 inline-input" data-toggle="tooltip" data-trigger="focus" data-placement="right" type="text" data-original-title="输入公告标题，请注意控制字数" id="news-title">
                         </div> 
                         
                         <div class="field-box">
                             <label>类型选择:</label>
                             <div class="span8">
                                 <label class="radio">
-                                    <div class="radio" id="uniform-optionsRadios1"><span class="checked"><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"></span></div>
+                                    <div class="radio" id="uniform-optionsRadios1"><span class="checked"><input type="radio" name="newsTypeRadios" id="newsTypeRadio1" value="option1"></span></div>
                                     新闻公告
                                 </label>
                                 <label class="radio">
-                                    <div class="radio" id="uniform-optionsRadios2"><span class=""><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"></span></div>
+                                    <div class="radio" id="uniform-optionsRadios2"><span class=""><input type="radio" name="newsTypeRadios" id="newsTypeRadio2" value="option2"></span></div>
                                     企业动态
                                 </label>
                             </div>                                
                         </div>
                         <div class="field-box">
                             <label>摘要:</label>
-                            <textarea class="span8" rows="3" data-toggle="tooltip" data-trigger="focus" data-placement="right" type="text" data-original-title="250字以内（发布 企业动态 则无需填写此项）" maxlength="140"></textarea>
+                            <textarea id="news-summary" class="span8" rows="3" data-toggle="tooltip" data-trigger="focus" data-placement="right" type="text" data-original-title="250字以内（发布 企业动态 则无需填写此项）" maxlength="250"></textarea>
                         </div>
                         <div class="field-box"> 
                             <label>详细内容:</label>
@@ -144,7 +144,7 @@
                             </div>
                         </div> <div class="field-box"> 
                             <label></label>
-                            <button class="btn-glow primary large">发布公告</button>
+                            <button class="btn-glow primary large" id="news-btn">新增公告</button>
                         </div>
 
                         <!-- <div class="field-box">
