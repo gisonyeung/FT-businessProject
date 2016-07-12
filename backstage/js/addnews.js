@@ -41,9 +41,9 @@ $(document).ready(function() {
                 method: 'POST',
                 data: latestNews,
                 success: function(result) {
-
-                    if( typeof(result) == 'Number' ) {
-                        alert('新增公告成功，编号为' + result + '公告状态为未上线状态，请手动上线。');
+                    var id = parseInt(result, 10)k
+                    if( typeof(id) == 'number' ) {
+                        alert('新增公告成功，编号为' + id + '公告状态为未上线状态，请手动上线。');
                         location.href = './allnews.html';
                     } else {
                         alert('新增公告失败，原因：' + result);

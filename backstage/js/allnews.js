@@ -52,7 +52,7 @@ $(document).ready(function() {
 	$('tbody').on('click', '.handle-edit', function() {
 		var id = $(this).parent().attr('data-id');
 		window.name = JSON.stringify(newsCache[id]);
-		location.href('./editnews.html');
+		location.href = './editnews.html';
 	});
 
 	// 删除新闻
@@ -83,7 +83,7 @@ $(document).ready(function() {
 	});	
 
 	// 下线
-	$('tbody').on('click', '.handle-delete', function() {
+	$('tbody').on('click', '.handle-offline', function() {
 		var id = $(this).parent().attr('data-id');
 		var label = $('#item-' + id).find('.label');
 
