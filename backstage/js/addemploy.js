@@ -25,8 +25,7 @@ $(document).ready(function() {
         url: baseUrl + '/employ/getDemandForEdit',
         method: 'GET',
         success: function(result) {
-
-            $('#detail').data("wysihtml5").editor.setValue(result);
+            $('#detail').data("wysihtml5").editor.setValue(result.replace(/\\n/g, '<br>'));
 
         },
         error: function() {

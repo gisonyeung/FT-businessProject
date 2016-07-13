@@ -43,20 +43,20 @@ $themeColor: #1199ed;
 
 	.wrap-tx {
 		position: absolute;
-	    width: 55%;
-    	left: 22.5%;
+	    width: 70%;
+    	left: 15%;
     	top: 25%;
 	}
 
 	#slider-item1 {
-		background-color: #3B6BAD;
+		background-color: #596396;
 		.wrap-bg {
 		    height: 450px;
-		    background: url(../img/banner1.jpg) center center no-repeat #3f6dac;
+		    background: url(../img/banner1.jpg) center center no-repeat #596396;
 		}
 		.wrap-tx {
 
-			@include bgsize(55%, 84px);
+			@include bgsize(70%, 126px);
 			@include bgimg('../img/b1-text1.png');
 
 		}
@@ -76,7 +76,7 @@ $themeColor: #1199ed;
 		    margin-left: .5%;
 
 			.wrap-tx {
-				height: 275px;
+				height: 347px;
 				h2 {
 					position: relative;
 					font-size: 22px;
@@ -99,7 +99,7 @@ $themeColor: #1199ed;
 				}
 				img {
 					position: relative;
-				    margin-top: -60px;
+				    margin-top: -8px;
 				    width: 100%;
 		    		z-index: 1;
 				}
@@ -178,26 +178,26 @@ $themeColor: #1199ed;
 			font-weight: normal;
 		}
 		.widget {
-			height: 260px;
+			height: 300px;
 			margin-bottom: 40px;
 			background-color: #fff;
 			border-top: 1px solid #fff;
 			&.a {
-				border-color: #F84541;
+				border-color: #01A8DF;
 				.wg-caption {
-					background-color: #F84541;
+					background: url('../img/widget1.jpg') top center #01A8DF;
 				}
 			}
 			&.b {
-				border-color: #7055B2;
+				border-color: #03D5E2;
 				.wg-caption {
-					background-color: #7055B2;
+					background: url('../img/widget2.jpg') top center #03D5E2;
 				}
 			}
 			&.c {
-				border-color: #4762B3;
+				border-color: #00D1A8;
 				.wg-caption {
-					background-color: #4762B3;
+					background: url('../img/widget3.jpg') top center #00D1A8;
 				}
 			}
 
@@ -205,7 +205,7 @@ $themeColor: #1199ed;
 		.wg-caption {
 			display: block;
 			width: 258px;
-			height: 230px;
+			height: 270px;
 		    padding: 15px 20px;
 		    float: left;
 		    color: #fff;
@@ -227,6 +227,7 @@ $themeColor: #1199ed;
 			letter-spacing: -.4em;
 			margin-left: 298px;
 			background-color: #fff;
+			max-height: 300px;
 			overflow: hidden;
 			.card {
 				display: inline-block;
@@ -235,7 +236,7 @@ $themeColor: #1199ed;
 				letter-spacing: normal;
 				width: 33.33333333%;
 				text-align: center;
-				height: 259px;
+				height: 300px;
 				margin-left: -1px;
 				overflow: hidden;
 			    border-right: 1px solid #e3e3e3;
@@ -247,6 +248,7 @@ $themeColor: #1199ed;
 					color: #333;
 				}
 				img {
+					margin-top: 27px;
 					width: 150px;
 					@include transition($time: 0.25s);
 				}
@@ -402,6 +404,7 @@ $themeColor: #1199ed;
 		@at-root {
 			.digest {
 				.wrap-tx {
+					height: 302px;
 					h2 {
 						font-size: 18px;
 					}
@@ -454,7 +457,7 @@ $themeColor: #1199ed;
 			    background: url(../img/banner1-sm.jpg) center center no-repeat #3f6dac;
 			}
 			.wrap-tx {
-				@include bgsize(55%, 45px);
+				@include bgsize(70%, 50px);
 				@include bgimg('../img/b1-text1.png');
 				background-size: contain;
 			}
@@ -475,6 +478,7 @@ $themeColor: #1199ed;
 	
 		.wrap-tx {
 			height: auto;
+			padding-bottom: 10px;
 			h2 {
 				font-size: 16px;
 			}
@@ -536,9 +540,9 @@ $themeColor: #1199ed;
 			}
 			.wg-content {
 				margin-left: 0;
-				height: 174px;
+				height: 161px;
 				.card {
-					height: 173px;
+					height: 160px;
 					border-bottom: 1px solid #e5e5e5;
 					h4 {
 						padding: 20px 0 32px 0;

@@ -97,8 +97,7 @@ $(document).ready(function() {
 				},
 				success: function(result) {
 					if( result == 'success' ) {
-						$(label).text('已下线');
-						$(label).removeClass('label-success');
+						location.reload();
 					} else {
 						alert('操作失败，原因：' + result);
 					}

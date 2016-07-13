@@ -3,16 +3,19 @@ $(document).ready(function() {
 	$("input:checkbox, input:radio").uniform();
 
     if( !window.name ) {
-        // alert('无内容');
-        // location.href = './allnews.html';
+         alert('无内容');
+         location.href = './allnews.html';
     }
 
-    // newsObj = JSON.parse(window.name);
+     newsObj = JSON.parse(window.name);
 
     // 修改内容
     $('#news-title').val(newsObj.title);
-    $('#news-summary').val(newsObj.content);
+    $('#news-summary').val(newsObj.summary);
+    console.log(newsObj.content);
+    console.log('<p>dddd</p>')
     $('#detail').val(newsObj.content);
+
     if(newsObj.messageType == '新闻公告') {
         $('#newsTypeRadio1').parent().addClass('checked');
     } else {
@@ -34,6 +37,7 @@ $(document).ready(function() {
         //     }
         // }
     });
+    // $('#detail').data("wysihtml5").editor.setValue(newsObj.content);
 
 
 
