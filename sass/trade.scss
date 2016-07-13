@@ -36,8 +36,8 @@ body {
 
 	.wrap-tx {
 		position: absolute;
-	    width: 55%;
-    	left: 22.5%;
+	    width: 70%;
+    	left: 15%;
     	top: 35%;
 	}
 
@@ -49,7 +49,7 @@ body {
 		}
 		.wrap-tx {
 
-			@include bgsize(55%, 84px);
+			@include bgsize(70%, 126px);
 			@include bgimg('../img/b1-text1.png');
 
 		}
@@ -196,7 +196,7 @@ body {
 			    background: url(../img/banner1-sm.jpg) center center no-repeat #3f6dac;
 			}
 			.wrap-tx {
-				@include bgsize(55%, 45px);
+				@include bgsize(70%, 50px);
 				@include bgimg('../img/b1-text1.png');
 				background-size: contain;
 			}
