@@ -47,17 +47,12 @@ $(document).ready(function() {
 	// 提交表单
 	function login(formData) {
 		$.ajax({
-			url: baseurl + '/spg/user/pc-login',
+			url: baseurl + '/user/login',
 			type: 'POST',
 			data: formData,
 			success: function(data) {
-				data = parseJSON(data);
-				if(data.result == 'success') {
-					if(data.url) {
-						location.href = baseurl + data.url
-					} else {
-						location.href = baseurl + '/spg/route/view/1';
-					}
+				if(data == 'success') {
+					location.href = baseurl + '/backstage/allnes.html';
 				} else {
 					errorTip('login', '登录失败，原因：' + data.reason);
 				}
@@ -108,12 +103,11 @@ $(document).ready(function() {
 	// 提交表单
 	function register(formData) {
 		$.ajax({
-			url: baseurl + '/spg/user/registering',
+			url: baseurl + '/user/register',
 			type: 'POST',
 			data: formData,
 			success: function(data) {
-				data = parseJSON(data);
-				if(data.result == 'success') {
+				if(data == 'success') {
 					successTip('恭喜，注册成功！');
 					cleanAll('register');
 				} else {

@@ -93,7 +93,12 @@ body {
 		    color: #999;
 		    width: 100%;
 		    box-sizing: border-box;
-
+			&.norecord {
+				padding: 20px;
+				text-align: center;
+				color: #999;
+				padding-bottom: 100px;
+			}
 		    .news-top {
 			    width: 100%;
     			overflow: auto;

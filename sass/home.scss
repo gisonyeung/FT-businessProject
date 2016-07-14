@@ -90,12 +90,13 @@ $themeColor: #1199ed;
 				p {
 					position: relative;
 		    		width: 70%;
-					font-size: 13px;
+					font-size: 15px;
 		    		color: #999;
-		    		line-height: 18px;
+		    		line-height: 20px;
 		    		z-index: 2;
 		    		margin: 0 auto;
-		    		font-family: tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+		    		text-align: center;
+		    		// font-family: tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
 				}
 				img {
 					position: relative;
@@ -217,10 +218,11 @@ $themeColor: #1199ed;
 				line-height: 50px;
 			}
 			p {
-				font-size: 12px;
+				font-size: 14px;
 				color: #fefefe;
 				line-height: 18px;
-				margin-top: -8px;
+				margin-top: 2px;
+				max-width: 85%;
 			}
 		}
 		.wg-content {

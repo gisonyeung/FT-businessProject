@@ -55,7 +55,7 @@ $(document).ready(function() {
 
                     if( result == 'success' ) {
                         alert('更新成功');
-                        location.href = baseUrl + '';
+                        location.href = baseUrl + '/employ/getDemand';
                     } else {
                         alert('更新失败，原因：' + result);
                     }
