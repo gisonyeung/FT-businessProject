@@ -45,8 +45,9 @@ $(document).ready(function() {
     $('#news-btn').on('click', function() {
 
         if( confirm('确定修改公告？') ) {
+
             var latestNews = {
-                newsId: newsObj.newsId, 
+                newsId: newsObj.id, 
                 content: $('#detail').val(), 
                 title: $('#news-title').val(), 
                 messageType: $('#newsTypeRadio2').parent().hasClass('checked') ? '0' : '1', 

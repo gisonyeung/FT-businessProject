@@ -12,11 +12,10 @@ $(document).ready(function() {
 		url: baseUrl + '/news/getNewsForBackstage',
 		method: 'GET',
 		success: function(data) {
-			data = newsCache = parseJSON(data);
+			data = parseJSON(data);
 			var allNews = '';
 			// 生成全部新闻
 			for(var i = 0; i < data.length; i++) {
-
 				var itemObj = {
 					id: data[i].id,
 					messageType: data[i].messageType,

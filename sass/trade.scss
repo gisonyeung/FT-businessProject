@@ -42,15 +42,15 @@ body {
 	}
 
 	#slider-item1 {
-		background-color: #596396;
+		background-color: #d7d7cc;
 		.wrap-bg {
-		    height: 352px;
-		    background: url(../img/banner1.jpg) center center no-repeat #596396;
+		    height: 450px;
+		    background: url(../img/banner2.jpg) center center no-repeat #d7d7cc;
 		}
 		.wrap-tx {
 
-			@include bgsize(70%, 126px);
-			@include bgimg('../img/b1-text1.png');
+			@include bgsize(70%, 161px);
+			@include bgimg('../img/b2-text1.png');
 
 		}
 	}
@@ -90,12 +90,12 @@ body {
 			    }
 		    }
 		    h3 {
-		    	margin: 30px 0 15px 0;
-				font-size: 18px;
+		    	margin: 36px 0 17px 0;
+				font-size: 23px;
 				font-weight: normal;
 		    }
 		    .wrap-tx {
-		    	font-size: 12px;
+		    	font-size: 14px;
 		    	color: #999;
 		    	padding: 0 20%;
 			    p {
@@ -106,8 +106,8 @@ body {
 				position: absolute;
 				left: 50%;
 				bottom: 40px;
-				width: 175px;
-				margin-left: -88px;
+				width: 139px;
+				margin-left: -70px;
 		    }
 		}
 	}
@@ -121,12 +121,12 @@ body {
 		}
 		.wrap-tx {
 			margin-top: 22px;
-			padding: 20px 10px;
+			padding: 40px 10px;
 			border: 1px solid #e5e5e5;
-			height: 500px;
 			text-align: center;
 			img {
-				display: none;
+				width: 90%;
+				max-width: 600px;
 			}
 		}
 	}
@@ -187,18 +187,19 @@ body {
 		}
 
 		.wrap-tx {
-	    	top: 40%;
+	    	top: 33%;
+	    	left: 10%;
 		}
 
 		#slider-item1 {
 			background-color: #3B6BAD;
 			.wrap-bg {
 			    height: 140px;
-			    background: url(../img/banner1-sm.jpg) center center no-repeat #3f6dac;
+			    background: url(../img/banner2-sm.jpg) center center no-repeat #3f6dac;
 			}
 			.wrap-tx {
-				@include bgsize(70%, 50px);
-				@include bgimg('../img/b1-text1.png');
+				@include bgsize(80%, 60px);
+				@include bgimg('../img/b2-text1.png');
 				background-size: contain;
 			}
 		}
@@ -234,7 +235,9 @@ body {
 					font-size: 14px;
 				}
 				img {
-					bottom: 27px;
+					width: 100px;
+					margin-left: -50px;
+					bottom: 19px;
 				}
 			}
 		}
@@ -249,7 +252,6 @@ body {
 			.wrap-tx {
 				margin-top: 22px;
 				padding: 20px 10px;
-				height: 340px;
 			}
 		}
 

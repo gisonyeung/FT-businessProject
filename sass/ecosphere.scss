@@ -42,15 +42,15 @@ body {
 	}
 
 	#slider-item1 {
-		background-color: #596396;
+		background-color: #38425c;
 		.wrap-bg {
-		    height: 352px;
-		    background: url(../img/banner1.jpg) center center no-repeat #596396;
+		    height: 450px;
+		    background: url(../img/banner4.jpg) center center no-repeat #38425c;
 		}
 		.wrap-tx {
 
-			@include bgsize(70%, 126px);
-			@include bgimg('../img/b1-text1.png');
+			@include bgsize(70%, 161px);
+			@include bgimg('../img/b4-text1.png');
 
 		}
 	}
@@ -163,18 +163,19 @@ body {
 		}
 
 		.wrap-tx {
-	    	top: 40%;
+	    	top: 33%;
+	    	left: 10%;
 		}
 
 		#slider-item1 {
 			background-color: #3B6BAD;
 			.wrap-bg {
 			    height: 140px;
-			    background: url(../img/banner1-sm.jpg) center center no-repeat #3f6dac;
+			    background: url(../img/banner4-sm.jpg) center center no-repeat #3f6dac;
 			}
 			.wrap-tx {
-				@include bgsize(70%, 50px);
-				@include bgimg('../img/b1-text1.png');
+				@include bgsize(80%, 60px);
+				@include bgimg('../img/b4-text1.png');
 				background-size: contain;
 			}
 		}

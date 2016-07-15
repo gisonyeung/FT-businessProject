@@ -108,6 +108,10 @@ body {
         p {
         	margin: 0 0 1em;
         }
+        a {
+        	color:$themeColor;
+        	text-decoration: underline;
+        }
 	}
 
 	.detail-footer {

@@ -311,14 +311,14 @@ $themeColor: #1199ed;
 			padding: 20px 18px 17px 20px;
 			min-height: 115px;
 			ul {
-				font-size: 12px;
+				font-size: 14px;
 				color: #333;
 				li {
 					position: relative;
 				}
 				a {
 					display: block;
-				    line-height: 18px;
+				    line-height: 21px;
 				    @include transition();
 				    .date {
 				    	position: absolute;

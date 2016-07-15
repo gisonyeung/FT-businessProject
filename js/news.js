@@ -66,6 +66,8 @@ $(document).ready(function() {
 			allPage = parseInt(pagination.attr('data-all'), 10) || 1;
 
 		if( allPage == 1) {
+			$('.arrow-prev').hide();
+			$('.arrow-next').hide();
 			return false;
 		}
 
