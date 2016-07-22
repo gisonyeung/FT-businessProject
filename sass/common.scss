@@ -48,6 +48,7 @@ a {
 
 
 $themeColor: #1199ed;
+// $themeColor: #0f9eda;
 
 // 清除浮动
 .fixed {
@@ -78,42 +79,48 @@ $themeColor: #1199ed;
     margin: 0 auto;
 }
 
+$navHeight: 80px;
+
 .header {
+	height: $navHeight;
     background-color: #fff;
-	height: 60px;
 	.ft-brand {
 	    // position: relative;
-	    height: 60px;
-	    line-height: 60px;
+	    height: $navHeight;
+	    line-height: $navHeight;
 	    float: left;
 	    border-bottom: none;
 	    .ft-logo {
 	    	position: absolute;
-	    	top: 17px;
-	    	@include bgsize(236px, 25px);
-	    	@include bgimg('../img/brand2.png');
+	    	top: 24px;
+	    	@include bgsize(144px, 32px);
+	    	@include bgimg('../img/brand1.png');
 	    }
 	}
 	.nav {
-	    height: 60px;
-	    line-height: 60px;
+	    height: $navHeight;
+	    line-height: $navHeight;
 	    float: right;
 	}
 
 	.ft-list {
-		font-size: 14px;
+		font-size: 16px;
+		// font-weight: bold;
+		font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+
 		li {
 			display: inline-block;
 			*zoom: 1;
 			*display: inline;
-			margin-left: 30px;
-		    height: 58px;
-    		line-height: 58px;
+			margin-left: 35px;
+		    height: $navHeight - 2px;
+    		line-height: $navHeight - 2px;
+    		text-shadow: 0 0 1px rgba(#000, 0.05);
 
     		a {
-    			color: #333;
+    			color: #555;
     			&:visited {
-    				color: #333;
+    				color: #555;
     			}
 
     			&:hover {
