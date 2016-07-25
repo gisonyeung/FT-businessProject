@@ -76,11 +76,11 @@ $themeColor: #1199ed;
 		    margin-left: .5%;
 
 			.wrap-tx {
-				height: 347px;
+				height: 374px;
 				h2 {
 					position: relative;
 					font-size: 22px;
-					padding: 20px 0 10px;
+					padding: 35px 0 15px;
 				    color: #333;
 				    line-height: 1em;
 				    font-weight: 400;
@@ -92,7 +92,7 @@ $themeColor: #1199ed;
 		    		width: 70%;
 					font-size: 15px;
 		    		color: #999;
-		    		line-height: 20px;
+		    		line-height: 23px;
 		    		z-index: 2;
 		    		margin: 0 auto;
 		    		text-align: center;
@@ -245,13 +245,14 @@ $themeColor: #1199ed;
 			    cursor: pointer;
 				h4 {
 					font-weight: normal;
-					font-size: 18px;
-					padding: 25px 0 20px 0;
+					font-size: 22px;
+					color: #555;
+					padding: 35px 0 20px 0;
 					color: #333;
 				}
 				img {
-					margin-top: 27px;
-					width: 150px;
+					margin-top: -20px;
+					width: 220px;
 					@include transition($time: 0.25s);
 				}
 				&.no-border {
@@ -259,7 +260,8 @@ $themeColor: #1199ed;
 				}
 				&:hover {
 					img {
-						width: 170px;
+						margin-top: -5px;
+						width: 200px;
 					}
 				}
 			}
@@ -407,7 +409,7 @@ $themeColor: #1199ed;
 		@at-root {
 			.digest {
 				.wrap-tx {
-					height: 302px;
+					height: 353px;
 					h2 {
 						font-size: 18px;
 					}
@@ -540,6 +542,7 @@ $themeColor: #1199ed;
 					right: 20px;
 					font-size: 14px;
 				}
+
 			}
 			.wg-content {
 				margin-left: 0;
@@ -554,6 +557,12 @@ $themeColor: #1199ed;
 					img {
 						width: 86px!important;
 						margin-top: -16px;
+
+					}
+					&:hover {
+						img {
+							margin-top: -16px;
+						}
 					}
 				}
 			}

@@ -115,6 +115,7 @@ body {
 	&.part2 {
 		padding: 0 0 50px;
 		h2 {
+			color: #333;
 			padding: 45px 0;
 			font-size: 22px;
 			font-weight: normal;
@@ -122,10 +123,11 @@ body {
 		.wrap-tx {
 			padding: 40px 10px;
 			margin-bottom: 45px;
-			border: 1px solid #e5e5e5;
+			border-bottom: 1px solid #eee;
 			text-align: center;
 			&:last-child {
 				margin-bottom: 0;
+				border-bottom: 0;
 			}
 		}
 		img {
@@ -134,8 +136,10 @@ body {
 	}
 
 	&.part3 {
+
 		padding: 0 0 60px;
 		h2 {
+			color: #333;
 			padding: 45px 0;
 			font-size: 22px;
 			font-weight: normal;

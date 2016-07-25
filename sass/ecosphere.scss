@@ -117,20 +117,21 @@ body {
 	}
 
 	&.part2 {
-		padding: 50px 0;
+		padding: 0 0 50px;
 		h2 {
+			color: #333;
 			font-size: 22px;
 			font-weight: normal;
+			padding: 45px 0;
 			
 		}
 		.wrap-tx {
-			margin-top: 22px;
 			padding: 20px 10px;
-			border: 1px solid #e5e5e5;
-			height: 500px;
+			border-top: 1px solid #eee;
 			text-align: center;
 			img {
-				display: none;
+				// display: none;
+				max-width: 90%;
 			}
 		}
 	}
