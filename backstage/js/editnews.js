@@ -12,8 +12,6 @@ $(document).ready(function() {
     // 修改内容
     $('#news-title').val(newsObj.title);
     $('#news-summary').val(newsObj.summary);
-    console.log(newsObj.content);
-    console.log('<p>dddd</p>')
     $('#detail').val(newsObj.content);
 
     if(newsObj.messageType == '新闻公告') {
