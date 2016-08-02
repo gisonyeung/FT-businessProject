@@ -85,7 +85,7 @@ body {
 .main {
     padding: 0 30px 100px;
     margin-top: 50px;
-    font-size: 14px;
+    font-size: 15px;
     .wrap-content {
     	position: relative;
     	margin-top: 20px;
@@ -95,7 +95,8 @@ body {
     	}
     	p {
     		text-indent: 2em;
-    		margin: 15px 0;
+    		line-height: 26px;
+    		margin: 17px 0;
     	}
     	.our-wish {
     		margin-top: 60px;
@@ -104,6 +105,15 @@ body {
     		p {
     			text-indent: 0;
 
+    		}
+	    	
+    	}
+    	.about-ul {
+    		color: #555;
+    		list-style-type: circle;
+    		li {
+    			margin-left: 45px;
+    			line-height: 28px;
     		}
     	}
     }
@@ -116,7 +126,7 @@ body {
     	}
     	p {
 
-    		line-height: 20px;
+    		line-height: 24px;
     		span {
     			// color: $themeColor;
     			margin: 0 2px;
@@ -124,9 +134,24 @@ body {
     	}
     	ul {
     		list-style-type: circle;
-    		margin-left: 17px;
+    		margin-left: 45px;
     	}
     }
+    .our-wish {
+    	border-top: 1px solid #eee;
+    	padding-top: 60px;
+		margin-top: 120px;
+		text-align: center;
+		h2 {
+    		text-align: center;
+    		font-weight: normal;
+    	}
+    	p {
+    		text-indent: 0;
+    		line-height: 20px;
+    		margin: 17px 0;
+    	}
+	}
     .wrap-contact {
     	position: relative;
     	margin-top: 20px;

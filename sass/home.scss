@@ -227,12 +227,14 @@ $themeColor: #1199ed;
 			}
 		}
 		.wg-content {
+
 			letter-spacing: -.4em;
 			margin-left: 298px;
 			background-color: #fff;
 			max-height: 300px;
 			overflow: hidden;
 			.card {
+				float: left;
 				display: inline-block;
 				*zoom: 1;
 				*display: inline;

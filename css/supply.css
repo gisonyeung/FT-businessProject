@@ -78,11 +78,10 @@ body {
 .section.part2 .wrap-tx {
   padding: 40px 10px;
   margin-bottom: 45px;
-  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
   text-align: center; }
 .section.part2 .wrap-tx:last-child {
-  margin-bottom: 0;
-  border-bottom: 0; }
+  margin-bottom: 0; }
 .section.part2 img {
   max-width: 90%; }
 .section.part3 {

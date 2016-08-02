@@ -137,12 +137,12 @@ body {
   .section.part2 {
     padding: 15px 20px 20px; }
   .section.part2 h2 {
+    padding: 10px 0;
     font-size: 16px;
     font-weight: normal; }
   .section.part2 .wrap-tx {
-    margin-top: 22px;
-    padding: 20px 10px;
-    height: 340px; }
+    margin-top: 15px;
+    padding: 20px 10px; }
   .section.part3 {
     padding: 20px 20px 20px; }
   .section.part3 h2 {

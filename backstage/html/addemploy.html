@@ -20,6 +20,7 @@
     <link href="../css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
     <link href="../css/lib/uniform.default.css" type="text/css" rel="stylesheet" />
     <link href="../css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../kindeditor/Editor.css">
     
     <!-- this page specific styles -->
     <link rel="stylesheet" href="../css/compiled/form-showcase.css" type="text/css" media="screen" />
@@ -118,7 +119,8 @@
                         <div class="field-box"> 
                             <label>内容:</label>
                             <div class="wysi-column">
-                                <textarea id="detail" class="span10l" style="min-height: 800px; resize: resize; font-size: 12px; font-family: Microsoft Yahei;"></textarea>
+                                <!-- <textarea id="detail" class="span10" style="min-height: 800px; resize: resize; font-size: 12px; font-family: Microsoft Yahei;"></textarea> -->
+                                <textarea name="content" class="span10" style="width:780px;overflow:auto;resize:none;" id="articleContent"></textarea>
                             </div>
                         </div> <div class="field-box"> 
                             <label></label>
@@ -146,8 +148,49 @@
     <script src="../js/jquery.uniform.min.js"></script>
     <script src="../js/theme.js"></script>
     <!-- <script charset="utf-8" src="../editor/kindeditor-all-min.js"></script> -->
+    <script charset="utf-8" src="../kindeditor/kindeditor.js"></script>
+    <script charset="utf-8" src="../kindeditor/lang/zh_CN.js"></script>
+    <script charset="utf-8" src="../kindeditor/plugins/image/image.js"></script>
     <script>
-            
+       var editor;
+       $(function() {
+            var options = {
+                cssPath : '../kindeditor/Editor.css',
+                filterMode : true,
+                resizeType: 1,
+                 items: [
+                            'source', 'undo', 'redo', 'justifyleft', 'justifycenter', 'justifyright',
+                            'justifyfull', 'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent', 'subscript',
+                            'superscript', 'clearhtml',   
+                            'formatblock', 'fontname', 'fontsize', 'forecolor', 'hilitecolor', 'bold',
+                            'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat',
+                            'table', 'hr',
+                            'link', 'unlink'
+                        ],
+                themeType: "simple",
+                colorTable: [
+                                ['#36B6A1', '#778899', '#FF8282', '#F79B6D', '#B289CC', '#4898EB'],
+                                ['#7948DB', '#006600', '#99BB00', '#B8D100', '#60D978', '#00D5FF'],
+                                ['#337FE5', '#003399', '#4C33E5', '#9933E5', '#CC33E5', '#EE33EE'],
+                                ['#FFFFFF', '#CCCCCC', '#999999', '#666666', '#444444', '#000000']
+                            ],
+                // 指定上传文件的服务器端程序
+                // uploadJson: "/RdcBlog/pupload.do",
+                // urlType:'domain',
+                // 指定浏览远程图片的服务器端程序
+                // fileManagerJson: "xxx",
+                minHeight: "600px",
+                // afterUpload : function(url) {
+    //                     alert(url),
+                // 失去焦点时同步数据到textarea
+                afterBlur: function (){
+                    this.sync();
+                }
+                // autoHeightMode: trued
+            }
+             editor = KindEditor.create('textarea[name="content"]',options);
+
+        });     
     </script>
     <script src="../js/addemploy.js"></script>
 

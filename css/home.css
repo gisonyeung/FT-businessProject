@@ -153,6 +153,7 @@
   max-height: 300px;
   overflow: hidden; }
 .section.business .wg-content .card {
+  float: left;
   display: inline-block;
   *zoom: 1;
   *display: inline;
