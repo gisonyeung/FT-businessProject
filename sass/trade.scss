@@ -122,13 +122,86 @@ body {
 			
 		}
 		.wrap-tx {
-			padding: 60px 10px;
+			padding: 50px 10px 30px;
 			border-top: 1px solid #eee;
-			text-align: center;
+			text-align: left;
 			img {
 				width: 90%;
 				max-width: 857px;
 			}
+
+			.sub-title {
+				margin-bottom: 20px;
+				padding-left: 10px;
+				font-size: 18px;
+				color: #444;
+				font-weight: 400;
+				border-left: 5px solid #91d6ed;
+			}
+
+			&.a {
+				.sub-title {
+					border-left-color: #91d6ed;
+				}
+
+				.emoji {
+					color: #5bc1e4;
+				}
+			}
+
+			&.b {
+				.sub-title {
+					border-left-color: #aaf0e2;
+				}
+
+				.emoji {
+					color: #72dfc9;
+				}
+			}
+
+			
+			&.c {
+				.sub-title {
+					border-left-color: #bfe8af;
+				}
+
+				.emoji {
+					color: #8bd06f;
+				}
+			}
+
+
+
+
+
+
+			$leftWidth: 400px;
+
+			.cont {
+				li {
+					line-height: 35px;
+					color: #666;
+				}
+
+				.emoji {
+					margin-right: 7px;
+				}
+			}
+
+
+
+			.left-part {
+				float: left;
+				width: $leftWidth;
+			}
+
+			.right-part {
+				margin-left: $leftWidth + 70px;
+			}
+
+
+
+
 		}
 	}
 
@@ -254,7 +327,7 @@ body {
 		}
 
 		&.part2 {
-			padding: 0 20px 25px;
+			padding: 0 20px;
 			h2 {
 				padding: 20px 0;
 				font-size: 16px;
@@ -262,7 +335,35 @@ body {
 				
 			}
 			.wrap-tx {
-				padding: 20px 10px;
+				padding: 20px 10px 0;
+
+				.left-part, .right-part {
+					float: none;
+					display: block;
+					width: 100%;
+					margin: 0 0 30px;
+
+					&:last-child {
+						margin-bottom: 0;
+						padding-bottom: 20px;
+					}
+
+					.sub-title {
+						font-size: 16px;
+						margin-bottom: 10px;
+					}
+
+
+
+				}
+
+				.cont {
+					li {
+						line-height: 23px;
+						font-size: 14px;
+					}
+				}
+
 			}
 		}
 

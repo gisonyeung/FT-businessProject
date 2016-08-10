@@ -76,12 +76,41 @@ body {
   font-size: 22px;
   font-weight: normal; }
 .section.part2 .wrap-tx {
-  padding: 60px 10px;
+  padding: 50px 10px 30px;
   border-top: 1px solid #eee;
-  text-align: center; }
+  text-align: left; }
 .section.part2 .wrap-tx img {
   width: 90%;
   max-width: 857px; }
+.section.part2 .wrap-tx .sub-title {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-size: 18px;
+  color: #444;
+  font-weight: 400;
+  border-left: 5px solid #91d6ed; }
+.section.part2 .wrap-tx.a .sub-title {
+  border-left-color: #91d6ed; }
+.section.part2 .wrap-tx.a .emoji {
+  color: #5bc1e4; }
+.section.part2 .wrap-tx.b .sub-title {
+  border-left-color: #aaf0e2; }
+.section.part2 .wrap-tx.b .emoji {
+  color: #72dfc9; }
+.section.part2 .wrap-tx.c .sub-title {
+  border-left-color: #bfe8af; }
+.section.part2 .wrap-tx.c .emoji {
+  color: #8bd06f; }
+.section.part2 .wrap-tx .cont li {
+  line-height: 35px;
+  color: #666; }
+.section.part2 .wrap-tx .cont .emoji {
+  margin-right: 7px; }
+.section.part2 .wrap-tx .left-part {
+  float: left;
+  width: 400px; }
+.section.part2 .wrap-tx .right-part {
+  margin-left: 470px; }
 .section.part3 {
   padding: 0 0 60px; }
 .section.part3 h2 {
@@ -159,13 +188,27 @@ body {
     margin-left: -50px;
     bottom: 19px; }
   .section.part2 {
-    padding: 0 20px 25px; }
+    padding: 0 20px; }
   .section.part2 h2 {
     padding: 20px 0;
     font-size: 16px;
     font-weight: normal; }
   .section.part2 .wrap-tx {
-    padding: 20px 10px; }
+    padding: 20px 10px 0; }
+  .section.part2 .wrap-tx .left-part, .section.part2 .wrap-tx .right-part {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0 0 30px; }
+  .section.part2 .wrap-tx .left-part:last-child, .section.part2 .wrap-tx .right-part:last-child {
+    margin-bottom: 0;
+    padding-bottom: 20px; }
+  .section.part2 .wrap-tx .left-part .sub-title, .section.part2 .wrap-tx .right-part .sub-title {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .section.part2 .wrap-tx .cont li {
+    line-height: 23px;
+    font-size: 14px; }
   .section.part3 {
     padding: 0 20px 20px; }
   .section.part3 h2 {
